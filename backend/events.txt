@@ -1,0 +1,11 @@
+[
+  {
+    "name": "TechSpire",
+    "date": "2025-08-22",
+    "location": "Chitkara University",
+    "description": "Tech Event",
+    "organizer": "Coding Ninjas",
+    "capacity": "100",
+    "_id": "1755792927215"
+  }
+]
