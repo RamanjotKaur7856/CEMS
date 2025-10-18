@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.home-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen */
+  background: url('https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/03/CUB4-Top-10-reasons-why-Chitkara-University-is-the-best-University-in-North-India.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.home-content {
+  color: white;
+  z-index: 2;
+}
+
+.explore-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color:#f63b3b; /* orange/red */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #f63b3b;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #f63b3b, #ff6b6b);
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between links and user info */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* User info + logout button */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-user svg {
+  vertical-align: middle;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff1a1a;
+}
+
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Event Cards */
+.event-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-card p {
+  color: #555;
+  margin: 10px 0 15px;
+}
+
+.event-card .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons & Links */
+button, .btn {
+  background-color: #f63b3b;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #f63b3b;
+}
+
+.link {
+  color: #f63b3b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+/* Select / Dropdown */
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
+  border-color: #f63b3b; 
+}
